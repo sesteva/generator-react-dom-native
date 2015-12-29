@@ -10,11 +10,24 @@ npm install -g yo
 npm install -g generator-react-dom-native
 ```
 
-Then generate your new project:
+## App generator
+
+To generate your new project:
 
 ```bash
-yo react-dom-native
+mkdir MyProject && cd MyProject
+yo react-dom-native MyProject
 ```
+
+## Component generator
+
+To generate your new component:
+
+```bash
+cd src/components
+yo react-dom-native:component MyComponent
+```
+
 
 ## Getting To Know Yeoman
 
