@@ -13,7 +13,9 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "react",
+    "react-native"
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
