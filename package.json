@@ -1,7 +1,7 @@
 {
   "name": "generator-react-dom-native",
   "version": "0.0.0",
-  "description": "Create projects for both Web and Native sharing all logic",
+  "description": "Yeoman generator: Create project and components for both Web and Native sharing all logic",
   "homepage": "",
   "author": {
     "name": "Santiago Esteva",

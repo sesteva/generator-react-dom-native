@@ -38,13 +38,8 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: function () {
 
-    // var copyFile = function (tplPath, componentPath){
-    //   this.fs.copyTpl(
-    //     this.templatePath(tplPath),
-    //     this.destinationPath(this.applicationname + '/' + componentPath),
-    //     { applicationname: this.applicationname }
-    //   );
-    // }.bind(this)
+    // Call react-native
+    // Add boilerplate
 
   },
 

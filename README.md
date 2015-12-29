@@ -10,7 +10,7 @@ npm install -g yo
 npm install -g generator-react-dom-native
 ```
 
-## App generator
+## App generator (Not Yet Released)
 
 To generate your new project:
 
