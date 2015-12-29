@@ -10,10 +10,10 @@ describe('generator-react-dom-native:app', function () {
       .withPrompts({someAnswer: true})
       .on('end', done);
   });
-
-  it('creates files', function () {
-    assert.file([
-      'dummyfile.txt'
-    ]);
-  });
+  // 
+  // it('creates files', function () {
+  //   assert.file([
+  //     'dummyfile.txt'
+  //   ]);
+  // });
 });

@@ -4,6 +4,20 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
+
+  constructor: function () {
+    yeoman.generators.Base.apply(this, arguments);
+
+    this.argument('applicationname', {
+      desc: 'Name of the application to generate',
+      required: true
+    });
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    this.applicationname = capitalizeFirstLetter(this.applicationname);
+  },
+
   prompting: function () {
     var done = this.async();
 
@@ -12,12 +26,7 @@ module.exports = yeoman.generators.Base.extend({
       'Welcome to the grand ' + chalk.red('generator-react-dom-native') + ' generator!'
     ));
 
-    var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
+    var prompts = [];
 
     this.prompt(prompts, function (props) {
       this.props = props;
@@ -28,10 +37,15 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+
+    // var copyFile = function (tplPath, componentPath){
+    //   this.fs.copyTpl(
+    //     this.templatePath(tplPath),
+    //     this.destinationPath(this.applicationname + '/' + componentPath),
+    //     { applicationname: this.applicationname }
+    //   );
+    // }.bind(this)
+
   },
 
   install: function () {
