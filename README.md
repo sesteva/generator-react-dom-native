@@ -12,12 +12,7 @@ npm install -g generator-react-dom-native
 
 ## App generator (Not Yet Released)
 
-To generate your new project:
-
-```bash
-mkdir MyProject && cd MyProject
-yo react-dom-native MyProject
-```
+To generate your new project for the time being use react-native directly
 
 ## Component generator
 

@@ -53,6 +53,9 @@ module.exports = yeoman.generators.Base.extend({
     copyFile('ComponentRender.ios.js', this.componentname + 'Render.ios.js');
     copyFile('ComponentRender.native.js', this.componentname + 'Render.native.js');
     copyFile('ComponentRender.web.js', this.componentname + 'Render.web.js');
+    copyFile('ComponentRender.native.test.js', '__tests_/' + this.componentname + 'Render.native.test.js');
+    copyFile('ComponentRender.web.test.js', '__tests_/' + this.componentname + 'Render.web.test.js');
+    copyFile('ComponentLogic.test.js', '__tests_/' + this.componentname + 'Logic.test.js');
   },
 
   install: function () {
