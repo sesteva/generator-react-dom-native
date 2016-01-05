@@ -9,27 +9,17 @@ class Render extends React.Component {
 }
 
 describe('<%= componentName %>', function () {
-  let Component;
+  let Component, instance;
 
   beforeEach(function(){
     Component = <%= componentName %>(React,Render);
-    instance = new Component({
-      'loadProfile': ()=> {
-          return {'name':'santiago'}
-      }
+  })
+
+  it('should create a component with default props', function(){
+    instance = new Component({'a':1})
+    expect(instance.props).toEqual({
+      'a':1
     })
-    spyOn(instance.props, 'loadProfile')
-  })
-
-  it('should create a component with default state', function(){
-    let instance = new Component()
-    let defaultState = { }
-    expect(instance.state).toEqual(defaultState)
-  })
-
-  it('should load the profile when component did mount', ()=> {
-    instance.componentDidMount()
-    expect(instance.props.loadProfile).toHaveBeenCalled()
   })
 
 });

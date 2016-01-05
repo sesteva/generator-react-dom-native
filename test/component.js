@@ -19,9 +19,9 @@ describe('generator-react-dom-native:component', function () {
       'MyComponent/MyComponentRender.ios.js',
       'MyComponent/MyComponentRender.android.js',
       'MyComponent/MyComponentRender.web.js',
-      'MyComponent/__tests_/MyComponentRender.web.test.js',
-      'MyComponent/__tests_/MyComponentRender.native.test.js',
-      'MyComponent/__tests_/MyComponentLogic.test.js',
+      'MyComponent/__tests__/MyComponentRender.web.test.js',
+      'MyComponent/__tests__/MyComponentRender.native.test.js',
+      'MyComponent/__tests__/MyComponentLogic.test.js',
     ]);
   });
 });
