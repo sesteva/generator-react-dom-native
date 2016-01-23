@@ -16,6 +16,7 @@ module.exports = yeoman.generators.Base.extend({
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
     this.componentname = this.componentname;
+    this.componentNameCapitalized = capitalizeFirstLetter(this.componentname);
   },
 
   prompting: function () {
@@ -42,7 +43,7 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copyTpl(
         this.templatePath(tplPath),
         this.destinationPath(this.componentname + '/' + componentPath),
-        { componentName: this.componentname }
+        { componentName: this.componentNameCapitalized }
       );
     }.bind(this);
 
