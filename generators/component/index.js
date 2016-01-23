@@ -15,7 +15,7 @@ module.exports = yeoman.generators.Base.extend({
     function capitalizeFirstLetter(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    this.componentname = capitalizeFirstLetter(this.componentname);
+    this.componentname = this.componentname;
   },
 
   prompting: function () {

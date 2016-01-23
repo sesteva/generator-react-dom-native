@@ -6,22 +6,22 @@ var helpers = require('yeoman-generator').test;
 describe('generator-react-dom-native:component', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/component'))
-      .withArguments(['MyComponent'])
+      .withArguments(['myComponent'])
       .on('end', done);
   });
 
   it('creates files', function () {
     assert.file([
-      'MyComponent/MyComponent.native.js',
-      'MyComponent/MyComponent.web.js',
-      'MyComponent/MyComponentLogic.js',
-      'MyComponent/MyComponentRender.native.js',
-      'MyComponent/MyComponentRender.ios.js',
-      'MyComponent/MyComponentRender.android.js',
-      'MyComponent/MyComponentRender.web.js',
-      'MyComponent/__tests__/MyComponentRender.web.test.js',
-      'MyComponent/__tests__/MyComponentRender.native.test.js',
-      'MyComponent/__tests__/MyComponentLogic.test.js',
+      'myComponent/myComponent.native.js',
+      'myComponent/myComponent.web.js',
+      'myComponent/myComponentLogic.js',
+      'myComponent/myComponentRender.native.js',
+      'myComponent/myComponentRender.ios.js',
+      'myComponent/myComponentRender.android.js',
+      'myComponent/myComponentRender.web.js',
+      'myComponent/__tests__/myComponentRender.web.test.js',
+      'myComponent/__tests__/myComponentRender.native.test.js',
+      'myComponent/__tests__/myComponentLogic.test.js',
     ]);
   });
 });
