@@ -1,6 +1,6 @@
 'use strict';
 
-import NativeRender from './<%= componentName %>Render.native';
+import NativeRender from './<%= componentFileName %>Render.native';
 
 export default class Render extends NativeRender {
   constructor(props){

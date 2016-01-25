@@ -7,7 +7,7 @@ import shallowHelpers  from 'react-shallow-renderer-helpers'
 // Mocking Examples
 // jest.setMock('react-native-vector-icons/FontAwesome', 'Icon')
 // jest.setMock('../../EditProfileName/EditProfileName.native', 'Input')
-const <%= componentName %> = require.requireActual('../<%= componentName %>Render.native');
+const <%= componentName %> = require.requireActual('../<%= componentFileName %>Render.native');
 const shallowRenderer = shallowHelpers.createRenderer();
 
 describe('<%= componentName %>', function() {

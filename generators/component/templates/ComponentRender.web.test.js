@@ -1,7 +1,7 @@
 
 import React from 'react'
 import shallowHelpers  from 'react-shallow-renderer-helpers'
-const <%= componentName %> = require.requireActual('../<%= componentName %>Render.web');
+const <%= componentName %> = require.requireActual('../<%= componentFileName %>Render.web');
 const shallowRenderer = shallowHelpers.createRenderer();
 
 describe('<%= componentName %>', function() {

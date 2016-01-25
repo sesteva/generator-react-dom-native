@@ -6,8 +6,8 @@ import React, {
 } from 'react';
 import ReactDOM from 'react-dom';
 
-import Render from './<%= componentName %>Render.web';
-import Logic from './<%= componentName %>Logic';
+import Render from './<%= componentFileName %>Render.web';
+import Logic from './<%= componentFileName %>Logic';
 
 let MyInnerComponent = Logic(React,Render);
 

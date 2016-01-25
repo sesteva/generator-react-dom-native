@@ -5,8 +5,8 @@ import React, {
   PropTypes
 } from 'react-native';
 
-import Render from './<%= componentName %>Render';
-import Logic from './<%= componentName %>Logic';
+import Render from './<%= componentFileName %>Render';
+import Logic from './<%= componentFileName %>Logic';
 
 let MyInnerComponent = Logic(React,Render);
 

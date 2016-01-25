@@ -2,7 +2,7 @@
 
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
-const <%= componentName %> = require.requireActual('../<%= componentName %>Logic');
+const <%= componentName %> = require.requireActual('../<%= componentFileName %>Logic');
 
 class Render extends React.Component {
     render() { return false; }

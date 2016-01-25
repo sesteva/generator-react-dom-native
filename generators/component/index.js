@@ -43,7 +43,7 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copyTpl(
         this.templatePath(tplPath),
         this.destinationPath(this.componentname + '/' + componentPath),
-        { componentName: this.componentNameCapitalized }
+        { componentName: this.componentNameCapitalized, componentFileName: this.componentname }
       );
     }.bind(this);
 
