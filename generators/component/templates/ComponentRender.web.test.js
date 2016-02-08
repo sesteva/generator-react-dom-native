@@ -1,8 +1,9 @@
 
-import React from 'react'
-import shallowHelpers  from 'react-shallow-renderer-helpers'
-const <%= componentName %> = require.requireActual('../<%= componentFileName %>Render.web');
+import React from 'react';
+import shallowHelpers  from 'react-shallow-renderer-helpers';
 const shallowRenderer = shallowHelpers.createRenderer();
+
+const <%= componentName %> = require.requireActual('../<%= componentFileName %>Render.web');
 
 describe('<%= componentName %>', function() {
 
