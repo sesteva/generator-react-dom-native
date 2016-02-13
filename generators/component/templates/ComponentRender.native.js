@@ -80,4 +80,4 @@ var styles = StyleSheet.create({
   },
 });
 
-export default <%= componentName %>;
+module.exports = <%= componentName %>;

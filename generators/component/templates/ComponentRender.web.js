@@ -24,7 +24,7 @@ class <%= componentName %> extends Component {
 
 <%= componentName %>.propTypes = {}
 
-export default <%= componentName %>;
+module.exports = <%= componentName %>;
 
 var styles = {
   wrapper: {

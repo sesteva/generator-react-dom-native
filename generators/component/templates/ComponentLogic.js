@@ -1,6 +1,6 @@
 'use strict';
 
-export default (React,InnerComponent) => class extends React.Component {
+module.exports = (React,InnerComponent) => class extends React.Component {
 
   constructor(props) {
     super(props);

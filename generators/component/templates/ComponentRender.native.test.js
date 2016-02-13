@@ -2,13 +2,15 @@
 import React, {
   Text,
   View
-} from 'react-native'
-import shallowHelpers  from 'react-shallow-renderer-helpers'
-// Mocking Examples
-// jest.setMock('react-native-vector-icons/FontAwesome', 'Icon')
-// jest.setMock('../../EditProfileName/EditProfileName.native', 'Input')
-const <%= componentName %> = require.requireActual('../<%= componentFileName %>Render.native');
+} from 'react-native';
+import shallowHelpers  from 'react-shallow-renderer-helpers';
 const shallowRenderer = shallowHelpers.createRenderer();
+
+// Mocking Examples
+// jest.setMock('react-native-vector-icons/FontAwesome', 'IconMock')
+// jest.setMock('../../EditProfileName/EditProfileName.native', 'InputMock')
+
+const <%= componentName %> = require.requireActual('../<%= componentFileName %>Render.native');
 
 describe('<%= componentName %>', function() {
 
