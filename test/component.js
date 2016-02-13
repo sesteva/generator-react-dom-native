@@ -56,4 +56,14 @@ describe('generator-react-dom-native:component', function () {
   it('generates proper naming conventions for ComponentRender.web.test', function(){
     assert.fileContent('myComponent/__tests__/myComponentRender.web.test.js', /const MyComponent = require\.requireActual\('\.\.\/myComponentRender.web'\)/ )
   });
+
+  it('exports module using module.exports', function(){
+    assert.fileContent('myComponent/myComponent.native.js', /module.exports = MyComponent/)
+    assert.fileContent('myComponent/myComponent.web.js', /module.exports = MyComponent/)
+    assert.fileContent('myComponent/myComponentLogic.js', /module.exports/)
+    assert.fileContent('myComponent/myComponentRender.android.js', /module.exports = class Render/ )
+    assert.fileContent('myComponent/myComponentRender.ios.js', /module.exports = class Render/ )
+    assert.fileContent('myComponent/myComponentRender.native.js', /module.exports = MyComponent/ )
+    assert.fileContent('myComponent/myComponentRender.web.js', /module.exports = MyComponent/ )
+  });
 });

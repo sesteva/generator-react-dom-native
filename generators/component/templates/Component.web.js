@@ -25,4 +25,4 @@ class <%= componentName %> extends Component {
 
 }
 
-export default <%= componentName %>;
+module.exports = <%= componentName %>;
